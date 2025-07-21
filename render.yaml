@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: dryclean-backend
+    env: java
+    branch: main
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://localhost:3306/dryclean_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: root
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: Wok48875
