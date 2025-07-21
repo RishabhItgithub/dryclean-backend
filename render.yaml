@@ -1,7 +1,7 @@
 services:
   - type: web
     name: dryclean-backend
-    env: java
+    runtime: java
     branch: main
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/*.jar
