@@ -12,3 +12,7 @@ services:
         value: root
       - key: SPRING_DATASOURCE_PASSWORD
         value: Wok48875
+      - key: RAZORPAY_KEY_ID
+        value: rzp_test_KI14cf7hjlzMLJ
+      - key: RAZORPAY_KEY_SECRET
+        value: j57cRW4AjLZCl64WAb43cftg
