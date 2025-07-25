@@ -4,7 +4,7 @@ services:
     env: docker
     repo: https://github.com/RishabhItgithub/dryclean-backend
     branch: main
-    dockerfilePath: demo/Dockerfile  # Assuming your Dockerfile is in the `demo/` folder
+    dockerfilePath: demo/Dockerfile
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:mysql://your-mysql-host:3306/dryclean_db
@@ -12,7 +12,7 @@ services:
         value: root
       - key: SPRING_DATASOURCE_PASSWORD
         value: Wok48875
-      - key: RAZORPAY_KEY_ID
+      - key: RAZORPAY_KEY
         value: rzp_test_KI14cf7hjlzMLJ
-      - key: RAZORPAY_KEY_SECRET
-        value: j57cRW4AjLZCl64WAb43cftg
+      - key: RAZORPAY_SECRET
+        value: joYIdYhCyLMrDhRIkbNlxS0Y
