@@ -2,7 +2,7 @@ services:
   - type: web
     name: dryclean-backend
     env: docker
-    repo: https://github.com/your-username/your-repo  # Change to your actual GitHub repo
+    repo: https://github.com/RishabhItgithub/dryclean-backend
     branch: main
     dockerfilePath: demo/Dockerfile  # Assuming your Dockerfile is in the `demo/` folder
     envVars:
