@@ -1,13 +1,13 @@
 services:
   - type: web
     name: dryclean-backend
-    runtime: java
+    env: docker
+    repo: https://github.com/your-username/your-repo  # Change to your actual GitHub repo
     branch: main
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/*.jar
+    dockerfilePath: demo/Dockerfile  # Assuming your Dockerfile is in the `demo/` folder
     envVars:
       - key: SPRING_DATASOURCE_URL
-        value: jdbc:mysql://localhost:3306/dryclean_db
+        value: jdbc:mysql://your-mysql-host:3306/dryclean_db
       - key: SPRING_DATASOURCE_USERNAME
         value: root
       - key: SPRING_DATASOURCE_PASSWORD
