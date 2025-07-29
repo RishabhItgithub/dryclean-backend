@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dryclean-backend
+    env: docker
+    repo: https://github.com/RishabhItgithub/dryclean-backend
+    branch: main
+    dockerfilePath: demo/Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://your-mysql-host:3306/dryclean_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: root
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: Wok48875
+      - key: RAZORPAY_KEY
+        value: rzp_test_KI14cf7hjlzMLJ
+      - key: RAZORPAY_SECRET
+        value: joYIdYhCyLMrDhRIkbNlxS0Y
